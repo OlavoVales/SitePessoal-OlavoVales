@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li,
+p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+img {
+    display: block;
+}
+
+body{
+    padding: 10px;
+}
+
+/* Header */
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+header div{
+    padding: 10px 20px;
+    background-color: lightgray;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+    padding: 10px;
+}
+
+a:hover {
+    color: blue
+}
+
+a{
+    font-weight: bold;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Main */
+
+.titulo {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.linha {
+    border-bottom: 3px solid black;
+    margin: 10px 0;
+}
+
+/* Perfil */
+
+.perfil>* {
+    margin-bottom: 5px;
+}
+
+.nome {
+    color: blue;
+    font-weight: bold;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+.divisao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pessoas {
+    margin-right: 50px;
+}
+
+.topicos {
+    display: flex;
+}
+
+.topicos p {
+    margin-right: 10px;
+    background-color: lightblue;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Header */
+
+    .header {
+        display: block;
+        text-align: center;
+    }
+
+    header div{
+        max-width: 45%;
+        margin: 0 auto;
+    }
+
+    ul {
+        justify-content: center;
+    }
+
+    /* Perfil */
+    
+    .topicos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    .topicos p {
+        margin-bottom: 10px;
+    }
+
+}

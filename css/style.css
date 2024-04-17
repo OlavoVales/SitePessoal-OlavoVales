@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li,
+p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+img {
+    display: block;
+}
+
+body{
+    padding: 10px;
+}
+
+/* Header */
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.header div a:hover {
+    color: blue
+}
+
+header div{
+    padding: 10px 20px;
+    background-color: lightgray;
+}
+
+a{
+    font-weight: bold;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Main */
+
+.titulo {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.linha {
+    border-bottom: 3px solid black;
+    margin: 10px 0;
+}
+
+/* Perfil*/
+
+.divisao {
+    display: flex;
+}
+
+.perfil .divisao .foto {
+    margin: auto 0;
+}
+
+.perfil .divisao .informacoes {
+    margin-left: 10px;
+}
+
+.perfil .divisao .nome {
+    color: blue;
+    font-weight: bold;
+}
+
+.adicionais {
+    display: flex;
+    justify-content: space-between;
+}
+
+.perfil .divisao .redes-sociais i {
+    margin-right: 30px;
+}
+
+/*cards*/
+
+.informacoes-card {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/*carrossel*/
+
+.carrossel {
+    width: 30%;
+    margin: 0 auto;
+    background-color: lightblue;
+    padding: 30px;
+}
+
+/*Colegas de Trabalho*/
+
+.icons-colegas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+    grid-gap: 20px;
+}
+
+.colegas img {
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+}
+
+.nome-colega {
+    text-align: center;
+    color: blue;
+}
+
+/* Footer 
+
+.footer {
+  background: #727272;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+*/
+
+/* menu mobile */
+
+@media screen and (max-width: 768px) {
+
+    /* Header */
+
+    .header {
+        display: block;
+        text-align: center;
+    }
+
+    header div{
+        max-width: 45%;
+        margin: 0 auto;
+    }
+
+    ul{
+        justify-content: center;
+    }
+
+    /* Perfil*/
+
+    .divisao{
+        display: block;
+    }
+
+    .foto {
+        display: flex;
+        justify-content: center;
+    }
+
+    .perfil .divisao .nome {
+        text-align: center;
+    }
+
+    .redes-sociais{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /*cards*/
+
+    .card{
+        margin-bottom: 10px;
+    }
+
+    /*carrossel*/
+
+    .carrossel {
+        width: 80%;
+    }
+
+    /*Colegas de Trabalho*/
+
+    .icons-colegas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
